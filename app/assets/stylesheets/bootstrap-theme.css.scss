@@ -107,7 +107,13 @@ a {
 		border-top: 1px solid #E0dCCA;
 	}
 	margin-top: 80px;
-	height: 400px;
+	height: 200px;
+	.nav > li > a {
+		font-size: 14px;
+		&:hover {
+			background: none;
+		}
+	}
 }
 
 @media(max-width: 992px) and (min-width:768px) {
@@ -115,6 +121,6 @@ a {
 		font-size: 20px;
 	}
 	.navbar-default .navbar-nav > li > a {
-		font-size: 12px;
+		font-size: 10px;
 	}
 }
