@@ -1,0 +1,91 @@
+body {
+	font-family: 'Vollkorn';
+	font-size: 18px;
+	background: url('body-bg.jpg');
+	color: #E9E9E9;
+}
+
+h1 {
+	border-bottom: 1px solid #E0dCCA;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	color: #E0dCCA;
+}
+
+a {
+	color: #E0dCCA;
+	&:hover {
+		color: #E0dCCA;
+	}
+}
+
+.tour tbody > tr > td {
+	padding: 20px 0;
+}
+
+.nav-panel {
+	margin-bottom: 0;
+	background: #44525f;
+	color: #FFF;
+	border-radius: 0;
+	font-size: 14px;
+	.panel-body {
+		padding: 8px 0;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+	padding: 10px 0;
+	background: #E9E9E9;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li {
+	border-right: 1px solid #CCC;
+	&:first-child {
+		border-left: 1px solid #CCC;
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #44525f;
+	font-weight: bold;
+	font-size: 16px;
+	&:hover {
+		color: #000;
+	}
+}
+
+.navbar-default .navbar-brand {
+	font-size: 30px;
+	color: #44525f;
+	a:hover {
+		color: #4EB1BA;
+	}
+}
+
+.page-banner {
+	border-bottom: 1px solid #E9E9E9;
+	margin-bottom: 20px;
+}
+
+.mast-head {
+	padding: 100px 0;
+	background: #222;
+}
+
+.media-panel {
+	color: #44525f;
+	border: 3px solid #E9E9E9;
+	font-size: 16px;
+}
+
+.footer {
+	.container {
+		border-top: 1px solid #E0dCCA;
+	}
+	margin-top: 80px;
+	height: 400px;
+}
