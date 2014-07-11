@@ -28,7 +28,7 @@ $(document).ready(function() {
 	    success: function(result) {
 	    	instagramPhotos = result.data;
 
-	    	var img = $('<img class="col-lg-12">');
+	    	var img = $('<img class="col-lg-12 col-md-12">');
 	    	img.attr('src', instagramPhotos[0].images.standard_resolution.url);
 	    	$('#newestInstagram').html(img);
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	    		if( key === 12) {
 	    			return false;
 	    		}
-	    		var img = $('<div class="col-lg-3"><img width="100%" height="100%" src=' 
+	    		var img = $('<div class="col-lg-3 col-md-4 col-sm-4"><img width="100%" height="100%" src=' 
 	    			+ instagramPhotos[key].images.standard_resolution.url 
 	    			+ '></div>');
 	    		img.appendTo('#instagramFeed');
@@ -56,13 +56,17 @@ $(document).ready(function() {
 	    		var formattedDate = $.format.date(val.datetime, "MMM d")
 	    		var formattedTime = $.format.date(val.datetime, "h:mm a")
 
-
 	    		$("#tour > tbody").append("<tr><td>"
 	    			+ formattedDate + "</td><td>" 
 	    			+ val.venue.name + "</td><td>"
 	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
 	    			+ formattedTime + "</td><tr>");
 	    	})
+
+	    	var show = $('<h2>' + shows[0].venue.name 
+	    				+ '</h2><h4>' + $.format.date(shows[0].datetime, "MMM d") + '</h4>');
+	    	$('#nextShow').html(show);
+
 	    }
 	});
 });
