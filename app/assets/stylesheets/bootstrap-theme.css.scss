@@ -82,6 +82,26 @@ a {
 	font-size: 16px;
 }
 
+#newestInstagram {
+	img {
+		margin-bottom: 30px;
+		border: 1px solid #E0dCCA;
+		&.col-lg-12 {
+			padding: 0;
+		}
+	}
+}
+
+#instagramFeed {
+	&.col-lg-12 {
+		padding: 0;
+	}
+	img {
+		border: 1px solid #E0dCCA;
+		margin-bottom: 30px;
+	}
+}
+
 .footer {
 	.container {
 		border-top: 1px solid #E0dCCA;
