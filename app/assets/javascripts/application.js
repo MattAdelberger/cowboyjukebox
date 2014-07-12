@@ -51,6 +51,10 @@ $(document).ready(function() {
 	    success: function(result) {
 	    	shows = result;
 
+	    	var show = $('<h2>' + shows[0].venue.name 
+	    				+ '</h2><h4>' + $.format.date(shows[0].datetime, "MMM d") + '</h4>');
+	    	$('#nextShow').html(show);
+
 	    	$.each(shows, function(key, val) {
 
 	    		var formattedDate = $.format.date(val.datetime, "MMM d")
@@ -62,11 +66,6 @@ $(document).ready(function() {
 	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
 	    			+ formattedTime + "</td><tr>");
 	    	})
-
-	    	var show = $('<h2>' + shows[0].venue.name 
-	    				+ '</h2><h4>' + $.format.date(shows[0].datetime, "MMM d") + '</h4>');
-	    	$('#nextShow').html(show);
-
 	    }
 	});
 });
