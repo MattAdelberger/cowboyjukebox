@@ -72,8 +72,14 @@ a {
 }
 
 .mast-head {
-	padding: 100px 0;
-	background: #222;
+	background-image: image_url('masthead-bg.jpg');
+	background-size: cover;
+	padding: 150px 0;
+	border-bottom: 2px solid #FFF;
+	margin-bottom: 20px;
+	iframe {
+		border: 2px solid #E0dCCA;
+	}
 }
 
 .media-panel {
