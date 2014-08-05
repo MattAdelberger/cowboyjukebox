@@ -13,6 +13,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'dynamic_sitemaps'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.1.1'
