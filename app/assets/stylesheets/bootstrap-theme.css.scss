@@ -43,9 +43,12 @@ p {
 .navbar {
 	margin-bottom: 0;
 	padding: 10px 0;
-	background: #E9E9E9;
 	border: none;
+	border-top: 2px solid #FFF;
 	border-radius: 0;
+	background-image: image_url('nav-bg.jpg');
+	background-size: cover;
+	box-shadow: 0px 4px 5px #333;
 }
 
 .navbar-default .navbar-nav > li {
@@ -91,6 +94,15 @@ p {
 	color: #44525f;
 	border: 3px solid #E9E9E9;
 	font-size: 16px;
+}
+
+.btn-lg {
+	border-radius: none;
+}
+
+.btn-primary {
+	background: #E9E9E9;
+	color: #222;
 }
 
 #newestInstagram {
