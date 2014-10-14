@@ -33,7 +33,7 @@ $(document).ready(function() {
 	    	$('#newestInstagram').html(img);
 
 	    	$.each(instagramPhotos, function(key, val) {
-	    		if( key === 12) {
+	    		if( key === 8) {
 	    			return false;
 	    		}
 	    		var img = $('<div class="col-lg-3 col-md-4 col-sm-4"><img width="100%" height="100%" src=' 

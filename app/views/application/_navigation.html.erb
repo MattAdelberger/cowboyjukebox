@@ -1,16 +1,13 @@
 <div class="nav-panel panel">
   <div class="panel-body">
   	<div class="container">
-  		<div class="pull-left">
-    		
-    	</div>
-    	<div class="pull-right">
-    		<strong>
-          <%= link_to "Facebook", "http://www.facebook.com/cowboyjukebox", :target => "_blank" %> -
-          <%= link_to " Youtube", "https://www.youtube.com/channel/UCQGs25Q8ZVAYZ_CYo0I0PwQ", :target => "_blank" %> -
-          <%= link_to " Instagram", "http://www.instagram.com/cowboyjukeboxband", :target => "_blank" %>
-        </strong>
-    	</div>
+        <div class="pull-right">
+      		<strong>
+            <%= link_to "Facebook", "http://www.facebook.com/cowboyjukebox", :target => "_blank" %> -
+            <%= link_to " Youtube", "https://www.youtube.com/channel/UCQGs25Q8ZVAYZ_CYo0I0PwQ", :target => "_blank" %> -
+            <%= link_to " Instagram", "http://www.instagram.com/cowboyjukeboxband", :target => "_blank" %>
+          </strong>
+        </div>
 	</div>
   </div>
 </div>
@@ -24,19 +21,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "COWBOY JUKEBOX", root_path, :class => "navbar-brand" %>
+      <%= link_to "Cowboy Jukebox", root_path, :class => "navbar-brand" %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Tour", tour_path %></li>
-        <li><%= link_to "Band", band_path %></li>
-        <li><%= link_to "Multimedia", multimedia_path %></li>
-        <li><%= link_to "Press Kit", multimedia_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
+        <li class="<%= 'active' if action_name == 'index' %>"><%= link_to "Home", root_path %></li>
+        <li class="<%= 'active' if action_name == 'about' %>"><%= link_to "About", about_path %></li>
+        <li class="<%= 'active' if action_name == 'tour' %>"><%= link_to "Tour", tour_path %></li>
+        <li class="<%= 'active' if action_name == 'band' %>"><%= link_to "Band", band_path %></li>
+        <li class="<%= 'active' if action_name == 'multimedia' %>"><%= link_to "Multimedia", multimedia_path %></li>
+        <li class="<%= 'active' if action_name == 'multimedia' %>"><%= link_to "Press Kit", multimedia_path %></li>
+        <li class="<%= 'active' if action_name == 'contact' %>"><%= link_to "Contact", contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
