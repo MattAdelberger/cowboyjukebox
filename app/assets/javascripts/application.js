@@ -49,18 +49,35 @@ $(document).ready(function() {
 	    type: 'GET',
 	    dataType: 'jsonp',
 	    success: function(result) {
-	    	shows = result;
+	    	allUpcomingShows = result;
 
-	    	var show = $('<h2>' + shows[0].venue.name 
-	    				+ '</h2><h4>' + $.format.date(shows[0].datetime, "MMM d") + '</h4>');
-	    	$('#nextShow').html(show);
-
-	    	$.each(shows, function(key, val) {
+	    	$.each(allUpcomingShows, function(key, val) {
 
 	    		var formattedDate = $.format.date(val.datetime, "MMM d")
 	    		var formattedTime = $.format.date(val.datetime, "h:mm a")
 
-	    		$("#tour > tbody").append("<tr><td>"
+	    		$("#allUpcomingShows > tbody").append("<tr><td>"
+	    			+ formattedDate + "</td><td>" 
+	    			+ val.venue.name + "</td><td>"
+	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
+	    			+ formattedTime + "</td><tr>");
+	    	})
+	    }
+	});
+
+	$.ajax({
+	    url: 'http://api.bandsintown.com/artists/cowboyjukebox/events.json?api_version=2.0&app_id=COWBOYJUKEBOX&date=2014-01-01,2014-12-31',
+	    type: 'GET',
+	    dataType: 'jsonp',
+	    success: function(result) {
+	    	pastShows = result;
+
+	    	$.each(pastShows, function(key, val) {
+
+	    		var formattedDate = $.format.date(val.datetime, "MMM d")
+	    		var formattedTime = $.format.date(val.datetime, "h:mm a")
+
+	    		$("#pastShows > tbody").prepend("<tr><td>"
 	    			+ formattedDate + "</td><td>" 
 	    			+ val.venue.name + "</td><td>"
 	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
