@@ -45,10 +45,7 @@ a {
 p {
 	line-height: 40px;
 	font-weight: normal;
-}
-
-.tour tbody > tr > td {
-	padding: 20px 0;
+	text-align: justify;
 }
 
 .nav-panel {
@@ -174,12 +171,19 @@ p {
 
 @media (max-width:767px) {
 body {
-	font-size: 12px;
+	font-size: 13px;
+}
+p {
+	line-height: 30px;
+}
+.navbar-default .navbar-brand {
+	font-size: 24px;
 }
 	h2 {
 		font-size: 18px;
+		padding: 10px;
 		a {
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 }
