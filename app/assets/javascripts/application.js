@@ -36,7 +36,7 @@ $(document).ready(function() {
 	    		if( key === 8) {
 	    			return false;
 	    		}
-	    		var img = $('<div class="col-lg-3 col-md-4 col-sm-4"><img width="100%" height="100%" src=' 
+	    		var img = $('<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6"><img width="100%" height="100%" src=' 
 	    			+ instagramPhotos[key].images.standard_resolution.url 
 	    			+ '></div>');
 	    		img.appendTo('#instagramFeed');
