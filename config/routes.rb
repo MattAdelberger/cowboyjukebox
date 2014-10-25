@@ -12,6 +12,7 @@ Cowboyjukebox::Application.routes.draw do
   get 'tour' => 'application#tour'
   get 'band' => 'application#band'
   get 'multimedia' => 'application#multimedia'
+  get 'stage_plot' => 'application#stage_plot'
   get 'contact' => 'application#contact'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

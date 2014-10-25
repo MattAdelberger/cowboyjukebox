@@ -29,11 +29,14 @@ $(document).ready(function() {
 	    	instagramPhotos = result.data;
 
 	    	var img = $('<img class="col-lg-12 col-md-12">');
+	    	var text = $('<p class="new-instagram-caption">');
 	    	img.attr('src', instagramPhotos[0].images.standard_resolution.url);
+	    	text.text(instagramPhotos[0].caption.text);
 	    	$('#newestInstagram').html(img);
+	    	$('#newestInstagram').append(text);
 
 	    	$.each(instagramPhotos, function(key, val) {
-	    		if( key === 8) {
+	    		if( key === 12) {
 	    			return false;
 	    		}
 	    		var img = $('<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6"><img width="100%" height="100%" src=' 

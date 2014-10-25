@@ -28,6 +28,10 @@ h2 {
 	}
 }
 
+h3 {
+	margin: 20px 0;
+}
+
 a {
 	color: #424242;
 	&:hover {
@@ -118,9 +122,17 @@ p {
 
 #newestInstagram {
 	img {
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		border: 2px solid #701112;
 		padding: 3px;
+	}
+	.new-instagram-caption {
+		line-height: 20px;
+		text-align: center;
+		font-size: 14px;
+		font-style: italic;
+		padding: 0 10px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -155,6 +167,14 @@ p {
 
 .tab-content {
 	margin-top: 20px;
+}
+
+.sidebar-mailing-list .form-control {
+	border: 1px solid #FFF;
+	border-bottom: 2px dotted #424242;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 20px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {

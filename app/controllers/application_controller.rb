@@ -28,6 +28,11 @@ class ApplicationController < ActionController::Base
   	
   end
 
+  def stage_plot
+    @title = "Stage Plot"
+    
+  end
+
   def contact
     @title = "Contact"
   	
