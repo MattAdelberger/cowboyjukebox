@@ -18,6 +18,10 @@
 
 $(document).ready(function() {
 
+	$('#mailingListLink').click(function() {
+		$('#navMailingList').slideToggle();
+	});
+
 	var instagramPhotos = [];
 	var shows = [];
 
@@ -64,6 +68,11 @@ $(document).ready(function() {
 	    			+ val.venue.name + "</td><td>"
 	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
 	    			+ formattedTime + "</td><tr>");
+
+	    		$("#sidebarUpcomingShows > tbody").append("<tr><td>"
+	    			+ formattedDate + "</td><td>" 
+	    			+ val.venue.name + "</td><td>"
+	    			+ val.venue.city + ", " + val.venue.region + "</td><td><tr>");
 	    	})
 	    }
 	});

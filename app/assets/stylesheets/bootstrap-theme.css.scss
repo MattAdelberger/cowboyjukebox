@@ -39,6 +39,11 @@ a {
 	}
 }
 
+.btn-default:hover {
+	color: #fff;
+	background: #701112;
+}
+
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
@@ -99,7 +104,7 @@ p {
 .mast-head {
 	background-image: image_url('masthead-bg.jpg');
 	background-size: cover;
-	padding: 120px 0;
+	padding: 80px 0;
 	iframe {
 		border: 1px solid #d7dbdc;
 	}
@@ -149,6 +154,10 @@ p {
 	}
 }
 
+table.sidebar-tour {
+	font-size: 14px;
+}
+
 .footer {
 	border-top: 1px solid #d7dbdc;
 	height: 200px;
@@ -175,6 +184,16 @@ p {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	padding: 20px;
+}
+
+#navMailingList {
+	display: none;
+	.panel-body{
+		padding: 20px 0 40px 0;
+	}
+	h2 {
+		margin-top: 0;
+	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
