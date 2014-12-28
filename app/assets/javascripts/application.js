@@ -69,10 +69,18 @@ $(document).ready(function() {
 	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
 	    			+ formattedTime + "</td><tr>");
 
-	    		$("#sidebarUpcomingShows > tbody").append("<tr><td>"
+	    		if(key < 4) {
+	    			$("#upcomingShows > tbody").append("<tr><td>"
 	    			+ formattedDate + "</td><td>" 
 	    			+ val.venue.name + "</td><td>"
-	    			+ val.venue.city + ", " + val.venue.region + "</td><td><tr>");
+	    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
+	    			+ formattedTime + "</td><tr>");
+
+		    		$("#sidebarUpcomingShows > tbody").append("<tr><td>"
+		    			+ formattedDate + "</td><td>" 
+		    			+ val.venue.name + "</td><td>"
+		    			+ val.venue.city + ", " + val.venue.region + "</td><td><tr>");
+	    		}
 	    	})
 	    }
 	});
