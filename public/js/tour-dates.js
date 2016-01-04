@@ -16,7 +16,7 @@ $(document).ready(function() {
 	    		var formattedDate = $.format.date(val.datetime, "MMM d yyyy")
 	    		var formattedTime = $.format.date(val.datetime, "h:mm a")
 
-    			$("#upcomingShows > tbody").append("<tr><td>"
+    			$("#upcomingShows > tbody").prepend("<tr><td>"
     			+ formattedDate + "</td><td>" 
     			+ val.venue.name + "</td><td>"
     			+ val.venue.city + ", " + val.venue.region + "</td><td>"
