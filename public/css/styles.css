@@ -1,0 +1,132 @@
+body {
+	  font-family: Raleway, sans-serif;
+	  font-size: 16px;
+}
+
+.container-fluid {
+	max-width: 1170px;
+}
+
+section {
+	padding: 80px 0;
+}
+
+iframe {
+	margin: 0 auto;
+	display: block;
+}
+
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #000;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	border-radius: 0;
+    background: #333;
+    border-color: transparent;
+    padding: 6px 20px;
+}
+
+.table>tbody>tr>td {
+	padding: 16px 8px;
+	vertical-align: middle;
+}
+
+.band-image {
+  height: 700px;
+  background: url(../img/cj_bg.jpg) center top no-repeat;
+  background-size: cover;
+  position: relative;
+  display:block;
+}
+
+.band-image .logo {
+  transform: translateY(50%);
+}
+
+.band-image .logo img {
+		margin: 0 auto;
+}
+
+.tour-dates {
+	color: #fff;
+	background-color: #000;
+}
+
+.instagram {
+	background-color: #333;
+	color: #fff;
+}
+
+.booking {
+	text-align: center;
+}
+
+footer {
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 50px;
+  font-weight: 900;
+}
+
+.music {
+	background: #bfbbbc;
+	color: #000;
+}
+
+.video {
+	background: #000;
+}
+
+.video iframe {
+	border: 1px solid #bfbbbc !important;
+}
+
+@media only screen and (max-width: 1600px) {
+	.band-image {
+    height: 800px;
+	}
+	
+	.band-image .logo {
+    transform: translateY(30%);
+	}
+}
+
+@media only screen and (max-width: 1170x) {
+	.band-image {
+    height: 500px;
+	}
+	
+	.band-image .logo {
+    transform: translateY(30%);
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.band-image {
+    height: 300px;
+	}
+	
+	.band-image .logo {
+    transform: translateY(30%);
+	}
+}
+
+

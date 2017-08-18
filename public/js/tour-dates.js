@@ -13,14 +13,14 @@ $(document).ready(function() {
 
 	    		upcomingCount = upcomingCount + 1;
 
-	    		var formattedDate = $.format.date(val.datetime, "MMM d yyyy")
+	    		var formattedDate = $.format.date(val.datetime, "MMM d")
 	    		var formattedTime = $.format.date(val.datetime, "h:mm a")
 
     			$("#upcomingShows > tbody").prepend("<tr><td>"
     			+ formattedDate + "</td><td>" 
     			+ val.venue.name + "</td><td>"
     			+ val.venue.city + ", " + val.venue.region + "</td><td>"
-    			+ formattedTime + "</td><tr>");
+    			+ "<a class='btn btn-primary' target='_blank' href=" + val.facebook_rsvp_url + ">RSVP</a>" + "</td><tr>");
 	    	})
 	    }
 	});
@@ -41,8 +41,7 @@ $(document).ready(function() {
 		    		$("#allShows > tbody").append("<tr><td>"
 		    			+ formattedDate + "</td><td>" 
 		    			+ val.venue.name + "</td><td>"
-		    			+ val.venue.city + ", " + val.venue.region + "</td><td>"
-		    			+ formattedTime + "</td><tr>");
+		    			+ val.venue.city + ", " + val.venue.region + "</td></tr>");
 	    		}
 	    	})
 	    }
