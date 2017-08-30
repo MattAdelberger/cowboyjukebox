@@ -3,7 +3,7 @@ use Rack::Static,
   :root => "public"
 
 map "/" do
-  run lambda { |env|
+  run Proc.new  { |env|
   [
     200, 
     {
@@ -16,7 +16,7 @@ map "/" do
 end
 
 map "/newwebsite" do
-  run lambda { |env|
+  run Proc.new  { |env|
   [
     200, 
     {

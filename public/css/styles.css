@@ -28,10 +28,10 @@ a:hover {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-	border-radius: 0;
-    background: #333;
-    border-color: transparent;
-    padding: 6px 20px;
+  border-radius: 0;
+  background: #333;
+  border-color: transparent;
+  padding: 6px 20px;
 }
 
 .table>tbody>tr>td {
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .band-image .logo {
-  transform: translateY(50%);
+  transform: translateY(250%);
 }
 
 .band-image .logo img {
@@ -99,34 +99,86 @@ h1 {
 	border: 1px solid #bfbbbc !important;
 }
 
-@media only screen and (max-width: 1600px) {
-	.band-image {
-    height: 800px;
-	}
-	
-	.band-image .logo {
-    transform: translateY(30%);
-	}
+@media only screen and (min-width: 1440px) {
+  .band-image { 
+  	height: 800px; 
+  }
+  
+  .band-image .logo { 
+  	transform: translateY(250%); 
+  }
 }
 
-@media only screen and (max-width: 1170x) {
-	.band-image {
-    height: 500px;
+@media only screen and (max-width: 1339px) {
+  .band-image { 
+  	height: 750px; 
+  }
+    
+  .band-image .logo { 
+  	transform: translateY(230%); 
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .band-image { 
+  	height: 645px; 
+  }
+    
+  .band-image .logo { 
+  	transform: translateY(200%); 
 	}
-	
-	.band-image .logo {
-    transform: translateY(30%);
-	}
+
+}
+@media only screen and (max-width: 1199px) {
+  .band-image { 
+  	height:530px; 
+  }
+  
+  .band-image .logo { 
+  	transform: translateY(170%) scale(0.8); 
+  }
 }
 
 @media only screen and (max-width: 960px) {
-	.band-image {
-    height: 300px;
-	}
-	
-	.band-image .logo {
-    transform: translateY(30%);
-	}
+  .band-image { 
+  	background-position:center 55px; 
+  	background-size:cover; 
+  	height: 450px; 
+  }
+  
+  .band-image .logo { 
+  	transform: translateY(25%) scale(1); 
+  	padding: 190px 0 20px;
+  }
+      
+  .band-image .logo img { 
+  	max-width: 60%; 
+  }
 }
+
+@media only screen and (max-width: 800px) {
+  .band-image { 
+  	background-position:center 55px; 
+  	background-size:cover; 
+  	height: auto; 
+  }
+  
+  .band-image .logo { 
+  	transform: translateY(0) scale(1); 
+  	padding: 190px 0 20px;
+  }
+      
+  .band-image .logo img { 
+  	max-width: 60%; 
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .band-image .logo { 
+  	padding: 140px 0 20px;
+  }
+}
+
+
 
 
