@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$(window).load(function() {
+  // When the page has loaded
+  $("body").fadeIn(1000);
+});
+
 	var upcomingCount = 0;
 
 	$.ajax({

@@ -1,10 +1,26 @@
 body {
+  display:none;
 	  font-family: Raleway, sans-serif;
 	  font-size: 16px;
 }
 
+.form-control:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
 .container-fluid {
 	max-width: 1170px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: transparent !important;
+  color: #ff0000 !important;
+  padding-left: 0 !important;
+}
+
+#mc-embedded-subscribe {
+  padding: 10px 20px;
 }
 
 section {
@@ -22,6 +38,10 @@ a {
 
 a:hover {
 	color: #000;
+}
+
+.form-control {
+	border-radius: 0;
 }
 
 .btn-primary,
@@ -66,6 +86,7 @@ a:hover {
 }
 
 .booking {
+	background-color: #bfbbbc;
 	text-align: center;
 }
 
@@ -82,6 +103,7 @@ footer p {
 h1 {
 	text-align: center;
 	margin-bottom: 40px;
+  margin-top: 0;
 	font-size: 50px;
   font-weight: 900;
 }
@@ -157,8 +179,13 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  
   .band-image { 
-  	background-position:center 55px; 
+  	/*background-position:center 55px; */
+    background-position: center 0;
   	background-size:cover; 
   	height: auto; 
   }
@@ -171,11 +198,19 @@ h1 {
   .band-image .logo img { 
   	max-width: 60%; 
   }
+
+  section {
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .band-image .logo { 
-  	padding: 140px 0 20px;
+  	padding: 90px 0 30px;
   }
 }
 
